@@ -15,8 +15,9 @@ export default function Hero() {
       <motion.div style={{ y }} className="absolute inset-0 w-full h-full">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img 
-          src="/assets/Photos/A7405899.jpg" 
+          src="/assets/Photos/A7405899.webp" 
           alt="Blue Brick Interior" 
+          fetchPriority="high"
           className="w-full h-full object-cover object-bottom md:object-center transition-all duration-1000 scale-[1.8] origin-bottom md:scale-105 md:origin-center"
         />
       </motion.div>

@@ -10,10 +10,10 @@ export default function Gallery() {
   const rowRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const data = [
-    { src: "/assets/Photos/A7405901.jpg", left: "WE DON'T JUST SERVE FOOD.", right: "WE BUILD IT." },
-    { src: "/assets/Photos/A7405920.jpg", left: "EAT THE STRUCTURE.", right: "BREAK THE BRICK." },
-    { src: "/assets/Photos/A7405903.jpg", left: "WE DON'T NAME DRINKS.", right: "WE CURATE THEM." },
-    { src: "/assets/Photos/A7405898.jpg", left: "FORM FOLLOWS FLAVOR.", right: "EVERYTHING HAS ALIGNMENT." }
+    { src: "/assets/Photos/A7405901.webp", left: "WE DON'T JUST SERVE FOOD.", right: "WE BUILD IT." },
+    { src: "/assets/Photos/A7405920.webp", left: "EAT THE STRUCTURE.", right: "BREAK THE BRICK." },
+    { src: "/assets/Photos/A7405903.webp", left: "WE DON'T NAME DRINKS.", right: "WE CURATE THEM." },
+    { src: "/assets/Photos/A7405898.webp", left: "FORM FOLLOWS FLAVOR.", right: "EVERYTHING HAS ALIGNMENT." }
   ];
 
   useEffect(() => {
@@ -79,7 +79,7 @@ export default function Gallery() {
               {/* Image Half */}
               <div className="w-full md:w-1/2 flex justify-center">
                  <div className={`w-[85vw] md:w-[35vw] lg:w-[30vw] relative z-10 gallery-img-wrapper ${isEven ? 'rotate-1' : '-rotate-2'}`}>
-                    <img src={item.src} className="w-full h-auto object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.15)] will-change-transform" alt="Brand Aesthetics" />
+                    <img src={item.src} loading="lazy" decoding="async" className="w-full h-auto object-contain drop-shadow-[0_25px_35px_rgba(0,0,0,0.15)] will-change-transform" alt="Brand Aesthetics" />
                  </div>
               </div>
 

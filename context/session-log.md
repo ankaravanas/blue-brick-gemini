@@ -1,6 +1,27 @@
 # Session Log — Blue Brick Project
 
-## Session: March 19, 2026
+## Session: March 19, 2026 (Evening)
+
+### What Was Accomplished
+
+#### 1. GitHub Repository Created
+- **Repo:** https://github.com/ankaravanas/blue-brick-gemini
+- Initialized git, added `.gitignore`, committed 208 files
+- Pushed workspace including site, assets, context files, and reference materials
+
+#### 2. Vercel Deployment
+- Installed Vercel CLI via npx
+- Deployed site folder to Vercel production
+- **Live URL:** https://bluebrick-gemini.vercel.app
+- **Project:** `bluebrick-gemini` on andreas-wedohypecoms-projects
+
+#### 3. Build Verified
+- Vite + React + TypeScript builds successfully
+- Output: ~453KB JS, ~17KB CSS (gzipped: ~153KB JS, ~4.5KB CSS)
+
+---
+
+## Session: March 19, 2026 (Earlier)
 
 ### What Was Accomplished
 

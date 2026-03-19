@@ -1,0 +1,16 @@
+{
+  "name": "Blue Brick Athens",
+  "short_name": "Blue Brick",
+  "description": "All-Day Venue. Built, Not Served.",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1a1a1a",
+  "background_color": "#1a1a1a",
+  "display": "standalone",
+  "start_url": "/"
+}

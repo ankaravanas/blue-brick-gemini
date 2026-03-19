@@ -4,12 +4,12 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 
 export default function MenuPreview() {
   const menuImages = [
-    "/assets/Branding/menus/IMG_4027.JPG",
-    "/assets/Branding/menus/IMG_4028.JPG",
-    "/assets/Branding/menus/IMG_4030.JPG",
-    "/assets/Branding/menus/IMG_4031.JPG",
-    "/assets/Branding/menus/IMG_4032.JPG",
-    "/assets/Branding/menus/IMG_4033.JPG"
+    "/assets/Branding/menus/IMG_4027.webp",
+    "/assets/Branding/menus/IMG_4028.webp",
+    "/assets/Branding/menus/IMG_4030.webp",
+    "/assets/Branding/menus/IMG_4031.webp",
+    "/assets/Branding/menus/IMG_4032.webp",
+    "/assets/Branding/menus/IMG_4033.webp"
   ];
   
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,7 +34,7 @@ export default function MenuPreview() {
       <div className="md:hidden flex overflow-x-auto snap-x snap-mandatory gap-6 px-6 pb-24 w-full [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
          {menuImages.map((src, idx) => (
             <div key={idx} className="relative w-[85vw] flex-shrink-0 snap-center pointer-events-auto cursor-pointer" onClick={() => setSelectedImg(src)}>
-               <img src={src} alt={`Menu Page ${idx + 1}`} className="w-full h-auto object-cover border border-cream/10 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)]" />
+               <img src={src} alt={`Menu Page ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto object-cover border border-cream/10 shadow-[0_20px_40px_-10px_rgba(0,0,0,0.5)]" />
                <span className="absolute -bottom-8 left-0 font-mono text-xs uppercase tracking-widest text-cream/50">PG {idx + 1}</span>
             </div>
          ))}
@@ -48,7 +48,7 @@ export default function MenuPreview() {
           <motion.div style={{ x: scrollX }} className="flex gap-8 md:gap-16 items-center px-[10vw] md:px-[20vw] w-max">
             {menuImages.map((src, idx) => (
               <div key={idx} className="relative w-[85vw] md:w-[45vw] lg:w-[35vw] flex-shrink-0 group pointer-events-auto cursor-point" onClick={() => setSelectedImg(src)}>
-                 <img src={src} alt={`Menu Page ${idx + 1}`} className="w-full h-auto object-cover border border-cream/10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] transition-transform duration-700 group-hover:scale-[1.02] cursor-pointer" />
+                 <img src={src} alt={`Menu Page ${idx + 1}`} loading="lazy" decoding="async" className="w-full h-auto object-cover border border-cream/10 shadow-[0_35px_60px_-15px_rgba(0,0,0,0.5)] transition-transform duration-700 group-hover:scale-[1.02] cursor-pointer" />
                  <span className="absolute -bottom-8 left-0 font-mono text-xs uppercase tracking-widest text-cream/50">PG {idx + 1}</span>
               </div>
             ))}
